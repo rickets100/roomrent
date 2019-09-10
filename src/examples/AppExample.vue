@@ -3,9 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/explore">Explore</router-link> |
-      <router-link to="/eat">Eat</router-link> |
-      <router-link to="/sleep">Sleep</router-link>
+      <router-link to="/test">Test</router-link> |
+      <router-link to="/explore">Explore</router-link>
+      <!-- <router-link :to="{ name: 'Explore', params: { itemId: 12345 } }">Explore</router-link> -->
     </div>
     <router-view/>
   </div>

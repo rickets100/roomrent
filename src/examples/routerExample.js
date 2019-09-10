@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import Explore from './views/Explore.vue';
-import Eat from './views/Eat.vue';
-import Sleep from './views/Sleep.vue';
+import Test from './views/Test.vue';
+import ItemPage from './views/Explore.vue';
 
 Vue.use(Router);
 
@@ -17,19 +16,14 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/eat',
-      name: 'eat',
-      component: Eat,
+      path: '/test',
+      name: 'test',
+      component: Test,
     },
     {
-      path: '/explore',
-      name: 'explore',
-      component: Explore,
-    },
-    {
-      path: '/sleep',
-      name: 'sleep',
-      component: Sleep,
+      path: '/shop/item/:itemId',
+      name: 'itemPage',
+      component: ItemPage,
     },
     {
       path: '/about',
